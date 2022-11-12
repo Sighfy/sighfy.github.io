@@ -1,28 +1,9 @@
 body{
   margin: 0;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  background: url(images/waterline.png);
-  background-size: auto;
+  padding: 0;
+  background-size: cover;
   background-repeat: no-repeat;
-}
-@media only screen and (orientation: portrait) {
-    body {
-        .shrink {
-            width: 95%;
-        }
-    }
-}
-
-@media only screen and (orientation: landscape) {
-    body {
-        .shrink {
-            width: 90%;      /* Shrink a little more to avoid the notch. */
-        }
-    }
-}
-.center {
-    text-align: center;
-    margin: 0 auto;
+  background: url(images/waterline.png);
 }
 .box{
   width: 450px;
