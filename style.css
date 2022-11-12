@@ -1,10 +1,9 @@
 body{
   margin: 0;
-  padding: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   background: url(images/waterline.png);
   background-size: auto;
   background-repeat: no-repeat;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 @media only screen and (orientation: portrait) {
     body {
