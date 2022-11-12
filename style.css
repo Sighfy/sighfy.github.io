@@ -2,9 +2,9 @@ body{
   margin: 0;
   padding: 0;
   background: url(images/waterline.png);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 .box{
   width: 450px;
