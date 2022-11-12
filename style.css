@@ -6,12 +6,6 @@ body{
   background-repeat: no-repeat;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
-@supports(padding:max(0px)) {
-    body, header, footer {
-        padding-left: min(0vmin, env(safe-area-inset-left));
-        padding-right: min(0vmin, env(safe-area-inset-right));
-    }
-}
 @media only screen and (orientation: portrait) {
     body {
         .shrink {
@@ -26,6 +20,10 @@ body{
             width: 90%;      /* Shrink a little more to avoid the notch. */
         }
     }
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
 }
 .box{
   width: 450px;
