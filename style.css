@@ -3,7 +3,6 @@ body{
   padding: 0;
   background: url(images/waterline.png);
   background-repeat: no-repeat;
-  background-size: auto;
 }
 .box{
   width: 450px;
@@ -25,7 +24,7 @@ body{
   letter-spacing: 4px;
   font-weight: 100;
 }
-.box h5{
+.box h3{
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 100;
