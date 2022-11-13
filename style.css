@@ -2,6 +2,8 @@ html body{
   margin: 0;
   padding: 0;
   max-width: 100%;
+  min-height: calc(100% + env(safe-area-inset-top));
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   background-size: auto;
   background-repeat: no-repeat;
   background: url(images/waterline.png);
