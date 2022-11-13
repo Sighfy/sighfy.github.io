@@ -40,7 +40,7 @@ ul{
 }
 .box li{
   display: inline-block;
-  margin: 6px;
+  margin: 16px;
   list-style: none;
 }
 .box li a{
