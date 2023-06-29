@@ -69,50 +69,6 @@ main {
   z-index: 4;
 }
 
-/*.box {
-  max-width: 450px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
-  text-align: center;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
-  margin: auto;
-  margin-top: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  border-radius: 20px;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #fd00da, #19d7f8) 20;
-  border-image-slice: 1;
-  background-clip: padding-box;
-}*/
-
-
-/*.box {
-  max-width: 450px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 40px;
-  text-align: center;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
-  margin: auto;
-  margin-top: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  border-radius: 20px;
-  border: 5px solid #19d7f8;
-  border-image: linear-gradient(white, white),
-   linear-gradient(#fd00da, #19d7f8);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-*/
-
-
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -218,4 +174,96 @@ ul {
 
 .box li a:hover {
   color: #b9b9b9;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  
+  .stars,
+  .twinkling,
+  .clouds {
+    display: none;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    z-index: 4;
+  }
+  
+  .box {
+    background: var(--clr-1);
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 90%;
+    padding: 3%;
+    text-align: center;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box::before,
+  .box::after {
+    content: "";
+    position: absolute;
+    inset: -0.2rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-4),
+      var(--clr-3),
+      var(--clr-2),
+      var(--clr-3),
+      var(--clr-4)
+    );
+    border-radius: inherit;
+    animation: rotation 25s linear infinite;
+  }
+  
+  .box::after {
+    filter: blur(1.5rem);
+  }
+  
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
+  
+  .box-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .box h1 {
+    font-size: 30px;
+  }
+  
+  .box h3 {
+    font-size: 18px;
+  }
+  
+  .box li {
+    margin: 10px;
+  }
+  
+  .box li a {
+    font-size: 40px;
+  }
 }
