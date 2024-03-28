@@ -6,7 +6,13 @@
   <title>sighfy.dev</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,52 +29,16 @@
           </p>
       </div>
     </div>
+
+    <!-- Arrow to move down -->
+    <div class="has-text-centered animate__animated animate__fadeInUp animate__delay-3s">
+      <a href="#" class="scroll-down" data-tippy-content="Scroll Down">
+        <i class="fas fa-chevron-down vert-move2 fa-2x"></i>
+      </a>
+    </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
-  <script type="text/javascript">
-    const options = {
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-          //onHover: {
-          //  enable: true,
-          //  mode: "repulse",
-          //},
-        },
-        modes: {
-          push: {
-            quantity: 6,
-          },
-          repulse: {
-            distance: 100,
-          },
-        },
-      },
-      particles: {
-        links: {
-          enable: true,
-          opacity: 0.3,
-          distance: 200,
-        },
-        move: {
-          enable: true,
-          speed: { min: 1, max: 1 },
-        },
-        opacity: {
-          value: { min: 0.3, max: 0.7 },
-        },
-        size: {
-          value: { min: 1, max: 3 },
-        },
-      },
-    };
-
-    // Load particles into the particles-container
-    tsParticles.load("particles-container", options);
-  </script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
 </html>
