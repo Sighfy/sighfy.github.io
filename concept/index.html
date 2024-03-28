@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- <link rel="stylesheet" href="css/site.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>sighfy.dev</title>
+  </head>
+  <body>
+
+<div id="masthead">
+  <!-- Container for particles -->
+  <div id="particles-container"></div>
+  <div>
+    <div>
+        <img src="../images/sighfy.PNG" height="210px" width="190px" class="box-img">
+        <h1 class="font-weight-light animate__animated animate__fadeInUp">Sighfy</h1>
+        <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Custom Discord bot and web developer.</p>
+        <p class="lead">
+            <a target="_blank"
+              href="#"
+              style="animation-delay: 2s"
+              class="btn btn-lg btn-outline-light animate__animated animate__fadeInUp fa-brands fa-github">
+            </a>
+            <a target="_blank"
+              href="#"
+              style="animation-delay: 2.15s"
+              class="btn btn-lg btn-outline-light animate__animated animate__fadeInUp fa-brands fa-discord">
+            </a>
+            <a target="_blank"
+              href="#"
+              style="animation-delay: 2.30s"
+              class="btn btn-lg btn-outline-light animate__animated animate__fadeInUp fa-solid fa-envelope">
+            </a>
+        </p>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/popper.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/tsparticles.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(window).scroll(function() {
+$('nav').toggleClass('scrolled', $(this).scrollTop() > 512);
+});
+</script>
+
+<!-- Container for particles -->
+<div id="particles-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+<script type="text/javascript">
+  const options = {
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: "push",
+        },
+        //onHover: {
+        //  enable: true,
+        //  mode: "repulse",
+        //},
+      },
+      modes: {
+        push: {
+          quantity: 6,
+        },
+        repulse: {
+          distance: 100,
+        },
+      },
+    },
+    particles: {
+      links: {
+        enable: true,
+        opacity: 0.3,
+        distance: 200,
+      },
+      move: {
+        enable: true,
+        speed: { min: 1, max: 1 },
+      },
+      opacity: {
+        value: { min: 0.3, max: 0.7 },
+      },
+      size: {
+        value: { min: 1, max: 3 },
+      },
+    },
+  };
+
+  // Load particles into the particles-container
+  tsParticles.load("particles-container", options);
+</script>
+
+</body>
+</html>
