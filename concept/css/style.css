@@ -16,9 +16,16 @@ body {
     height: 100%;
     height: 100vh;
     /* Light theme */
-    background: linear-gradient(135deg, #000044, #000033, #000022, #000011, #000000);
+
+    background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
+
     /* Dark theme */
-    /* background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF); */
+    /*
+    background: linear-gradient(135deg,#000055, #000044, #000033, #000022, #000011);
+    */
+    /*
+    background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
+    */
     z-index: 4;
     animation: xd 10s ease;
     overflow: hidden;
