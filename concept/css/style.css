@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background-color: #1A004F;
+    background-color: #8600D3;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
 }
@@ -84,5 +84,30 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+.scroll-down i {
+    color: white;
+  }
+.vert-move2 {
+    -webkit-animation: mover 0.5s infinite alternate;
+    animation: mover 0.5s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes mover /* Safari and Chrome */ {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
     }
 }
