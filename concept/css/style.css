@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background-color: #8600D3;
+    background-color: #0c007d;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
 }
@@ -13,7 +13,8 @@ body {
 .bg-base {
     height: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #000044, #1A004F, #420080, #6B00A6, #8600D3, #A900EF);
+    background: linear-gradient(135deg, #0c007d,#552bb9,#9d55f5);
+
     /* Ocean Breeze */
     /*
     background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
