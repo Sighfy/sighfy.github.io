@@ -1,38 +1,42 @@
 /*
     https://coolors.co/5865f2-5e68f2-646af2-6f6ef1-8677ef-b388eb-ea80fc
 */
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
-    background-color: #5E68F2;
+    background-color: #1A004F;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
 }
 
-.navbar {
-    z-index: 9999;
-}
-
-#masthead {
+.bg-base {
     height: 100%;
     height: 100vh;
-    /* Light theme */
-
-    background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
-
-    /* Dark theme */
+    background: linear-gradient(135deg, #000044, #1A004F, #420080, #6B00A6, #8600D3, #A900EF);
+    /* Ocean Breeze */
     /*
-    background: linear-gradient(135deg,#000055, #000044, #000033, #000022, #000011);
+    background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
     */
+    /* Midnight Blue */
+    /*
+    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
+    */
+    /* Light theme */
+    /*
+    background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
+    */
+    /* Dark theme */
     /*
     background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
     */
     z-index: 4;
     animation: xd 10s ease;
-    overflow: hidden;
     position: relative; /* Ensure relative positioning for child elements */
+    overflow: hidden;
 }
 
-#masthead > div {
+.bg-base-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,16 +45,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
     user-select: none;
-}
-#masthead div:nth-last-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .lead {
@@ -60,14 +55,6 @@ body {
  .lead > a {
    margin-bottom: 0.5em;
  }
-
-.bg-dark {
-    background: 0 0 !important;
-}
-
-.bg-dark.scrolled {
-    background: #10061b !important;
-}
 
 .box-img {
     border-top-left-radius: 0; /* Keep top-left corner square */
@@ -89,8 +76,6 @@ body {
     height: 100%;
     z-index: -1; /* Ensure particles are behind other content */
 }
-
-
 
 @keyframes xd {
     from {
