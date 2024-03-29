@@ -5,36 +5,21 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background-color: #0c007d;
+    background-color: whitesmoke;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
 }
 
+
+
 .bg-base {
     height: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #0c007d,#552bb9,#9d55f5);
-
-    /* Ocean Breeze */
-    /*
-    background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
-    */
-    /* Midnight Blue */
-    /*
-    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
-    */
-    /* Light theme */
-    /*
-    background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
-    */
-    /* Dark theme */
-    /*
-    background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
-    */
-    z-index: 4;
+    background: linear-gradient(135deg, #0c007d, #552bb9, #9d55f5);
     animation: xd 10s ease;
-    position: relative; /* Ensure relative positioning for child elements */
+    position: relative;
     overflow: hidden;
+
 }
 
 .bg-base-content {
@@ -47,6 +32,15 @@ body {
     top: 0;
     left: 0;
     user-select: none;
+}
+
+#particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
 }
 
 .lead {
@@ -66,16 +60,6 @@ body {
     height: 10rem;
     margin-bottom: 1rem;
     overflow: hidden; /* Hide the overflowing content */
-}
-
-#particles-container {
-    /* Adjust the position and size of particles container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Ensure particles are behind other content */
 }
 
 @keyframes xd {
@@ -112,3 +96,21 @@ body {
         transform: translateY(-10px);
     }
 }
+
+
+    /* Ocean Breeze */
+    /*
+    background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
+    */
+    /* Midnight Blue */
+    /*
+    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
+    */
+    /* Light theme */
+    /*
+    background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
+    */
+    /* Dark theme */
+    /*
+    background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
+    */
