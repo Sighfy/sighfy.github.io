@@ -1,11 +1,9 @@
-/*
-    https://coolors.co/5865f2-5e68f2-646af2-6f6ef1-8677ef-b388eb-ea80fc
-*/
 html {
     scroll-behavior: smooth;
+    overflow: hidden; /* Removes the scrollbar, creating the single page look */
   }
 body {
-    background-color: whitesmoke;
+    background-color: #070A3B;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
 }
@@ -15,7 +13,7 @@ body {
 .bg-base {
     height: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #0c007d, #552bb9, #9d55f5);
+    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
     animation: xd 10s ease;
     position: relative;
     overflow: hidden;
@@ -71,6 +69,7 @@ body {
         opacity: 1;
     }
 }
+/*
 .scroll-down i {
     color: white;
   }
@@ -78,6 +77,7 @@ body {
     -webkit-animation: mover 0.5s infinite alternate;
     animation: mover 0.5s infinite alternate;
 }
+*/
 
 @keyframes mover {
     0% {
@@ -97,20 +97,26 @@ body {
     }
 }
 
-
-    /* Ocean Breeze */
-    /*
-    background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
-    */
-    /* Midnight Blue */
-    /*
-    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
-    */
-    /* Light theme */
-    /*
-    background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
-    */
-    /* Dark theme */
-    /*
-    background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
-    */
+/*
+    https://coolors.co/5865f2-5e68f2-646af2-6f6ef1-8677ef-b388eb-ea80fc
+*/
+/* Original Theme */
+/*
+background: linear-gradient(135deg, #0c007d, #552bb9, #9d55f5);
+*/
+/* Ocean Breeze */
+/*
+background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
+*/
+/* Midnight Blue */
+/*
+background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
+*/
+/* Light theme */
+/*
+background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
+*/
+/* Dark theme */
+/*
+background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
+*/
