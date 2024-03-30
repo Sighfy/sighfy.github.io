@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sighfy.dev</title>
+  <link rel="icon" href="/images/sighfy.PNG">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.0/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link
@@ -17,7 +18,38 @@
 </head>
 <body>
   <section class="hero bg-base is-fullheight">
+    <!-- Navbar start -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <!-- Burger menu -->
+        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- Navbar menu start -->
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="https://github.com/sighfy">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+
+          <a class="navbar-item" href="https://sighfy.dev/dna">
+            <i class="fa-solid fa-dna"></i> DNA
+          </a>
+        </div>
+        <div class="navbar-end"></div>
+        <!-- Navbar menu end -->
+      </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Particles container -->
     <div id="particles-container" class="is-overlay"></div>
+
+    <!-- Hero start-->
     <div class="hero-body">
       <div class="container has-text-centered">
           <img src="../images/sighfy.PNG" height="210px" width="190px" class="box-img">
@@ -26,19 +58,12 @@
           <p class="lead">
             <a target="_blank" href="https://github.com/Sighfy" style="animation-delay: 2s" class="button is-white is-outlined animate__animated animate__fadeInUp"><i class="fab fa-github"></i></a>
             <a target="_blank" href="mailto:contact@sighfy.dev" style="animation-delay: 2.15s" class="button is-white is-outlined animate__animated animate__fadeInUp"><i class="fas fa-envelope"></i></a>
-            <a target="_blank" href="https://sighfy.dev/dna" style="animation-delay: 2.30s" class="button is-white is-outlined animate__animated animate__fadeInUp"><i class="fa-solid fa-dna"></i></a>
+            <a target="_blank" href="https://sighfy.dev/dna" style="animation-delay: 2.30s" class="button is-white is-outlined animate__animated animate__fadeInUp"><i class="fa-brands fa-codepen"></i></a>
+            <a target="_blank" href="https://sighfy.dev/dna" style="animation-delay: 2.45s" class="button is-white is-outlined animate__animated animate__fadeInUp"><i class="fa-solid fa-dna"></i></a>
           </p>
       </div>
     </div>
-
-    <!-- Arrow to move down -->
-    <!--
-    <div class="has-text-centered animate__animated animate__fadeInUp animate__delay-3s">
-      <a href="#projects" class="scroll-down" data-tippy-content="Scroll Down">
-        <i class="fas fa-chevron-down vert-move2 fa-2x"></i>
-      </a>
-    </div>
-    -->
+    <!-- Hero end-->
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>

@@ -8,8 +8,6 @@ body {
     color: #fff;
 }
 
-
-
 .bg-base {
     height: 100%;
     height: 100vh;
@@ -39,6 +37,55 @@ body {
     padding: 0;
     margin: 0;
     z-index: 0;
+}
+
+/* Custom CSS for box dropdown */
+.navbar-menu {
+  display: none;
+  position: absolute;
+  right: 2rem; /* Increase spacing on the right */
+  top: calc(100% + 0.5rem);
+  z-index: 20;
+  background-color: transparent; /* Set background color */
+  border: 1px solid #454aa6; /* Set border */
+  border-radius: 1.5rem; /* Add border radius */
+  min-width: 200px; /* Set minimum width */
+}
+.navbar-item {
+    border-radius: .55rem; /* Add border radius to navbar items */
+}
+.navbar-item::after {
+content: ''; /* Add content to the pseudo-element */
+position: absolute; /* Set position absolute */
+bottom: -2px; /* Position the line below the navbar item */
+left: 5%; /* Align the line with the navbar item */
+width: 0%; /* Set width to auto to match text width */
+height: 2px; /* Set height of the line */
+background-color: #454aa6; /* Set color of the line */
+transition: width 0.3s ease; /* Add transition effect */
+}
+.navbar-item:hover::after {
+width: 90%; /* Expand the width of the line on hover */
+}
+.navbar-item:hover {
+    background-color: transparent; /* Change background color of navbar items on hover */
+    opacity: .5
+}
+.navbar-burger {
+    margin-right: 0.75rem;
+}
+.navbar-item.has-dropdown.is-active .navbar-menu {
+    display: block;
+}
+.navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: transparent; /* Remove background color from active dropdown */
+}
+.navbar-dropdown {
+    border: none; /* Remove border from dropdown items */
+    padding: 0.5rem; /* Add padding */
+}
+.navbar-item.has-dropdown.is-active .navbar-dropdown {
+    display: block; /* Show dropdown on active */
 }
 
 .lead {
