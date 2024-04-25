@@ -16,25 +16,41 @@ const options = {
       },
       repulse: {
         distance: 100,
+        duration: 0.4
       },
     },
   },
   particles: {
+    color: {
+      value: "#ffffff",
+    },
     links: {
+      color: "#ffffff",
+      distance: 150,
       enable: true,
       opacity: 0.3,
-      distance: 200,
+      width: 1,
     },
     move: {
       enable: true,
       speed: { min: 1, max: 1 },
     },
+    number: {
+      density: {
+          enable: true,
+        },
+      value: 60,
+    },
     opacity: {
       value: { min: 0.3, max: 0.7 },
+    },
+    shape: {
+      type: ["triangle","circle"],
     },
     size: {
       value: { min: 1, max: 3 },
     },
+    detectRetina: true,
   },
 };
 
