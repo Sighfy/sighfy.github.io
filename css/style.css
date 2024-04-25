@@ -1,9 +1,9 @@
 html {
     scroll-behavior: smooth;
-    overflow: hidden; /* Removes the scrollbar, creating the single page look */
+    overflow: hidden; /* Removes the scrollbar, creating the single page look, regardless of if there is more below */
   }
 body {
-    background-color: #070A3B;
+    /* background-color: #070A3B; */
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
 }
@@ -11,11 +11,10 @@ body {
 .bg-base {
     height: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
-    animation: xd 10s ease;
+    background: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
+    /* animation: xd 10s ease; */
     position: relative;
     overflow: hidden;
-
 }
 
 .bg-base-content {
@@ -39,18 +38,22 @@ body {
     z-index: 0;
 }
 
-/* Custom CSS for box dropdown */
-.navbar-menu {
-  display: none;
-  position: absolute;
-  right: 2rem; /* Increase spacing on the right */
-  top: calc(100% + 0.5rem);
-  z-index: 20;
-  background-color: transparent; /* Set background color */
-  border: 1px solid #454aa6; /* Set border */
-  border-radius: 1.5rem; /* Add border radius */
-  min-width: 200px; /* Set minimum width */
+/* This CSS will apply when the viewport width is 1024 pixels or less */
+@media (max-width: 1024px) {
+    /* Custom CSS for box dropdown */
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: calc(100% + 0.5rem);
+        z-index: 20;
+        background-color: transparent;
+        border: 1px solid #454aa6;
+        border-radius: 1.5rem;
+        min-width: 200px;
+      }
 }
+
 .navbar-item {
     border-radius: .55rem; /* Add border radius to navbar items */
 }
@@ -167,3 +170,9 @@ background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF,
 /*
 background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
 */
+
+.f-base {
+    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
+    position: relative;
+    overflow: hidden;
+}
