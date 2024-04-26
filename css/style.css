@@ -11,7 +11,7 @@ body {
 .bg-base {
     height: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
+    background: linear-gradient(135deg,#5865F2, #6F6EF1, #8677EF, #8677EF);
     /* animation: xd 10s ease; */
     position: relative;
     overflow: hidden;
@@ -29,14 +29,16 @@ body {
     user-select: none;
 }
 
-#particles-container {
+.hero-body {
+    position: relative;
+  }
+#tsparticles {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
-    z-index: 0;
-}
+  }
 
 /* This CSS will apply when the viewport width is 1024 pixels or less */
 @media (max-width: 1024px) {
@@ -58,17 +60,17 @@ body {
     border-radius: .55rem; /* Add border radius to navbar items */
 }
 .navbar-item::after {
-content: ''; /* Add content to the pseudo-element */
-position: absolute; /* Set position absolute */
-bottom: -2px; /* Position the line below the navbar item */
-left: 5%; /* Align the line with the navbar item */
-width: 0%; /* Set width to auto to match text width */
-height: 2px; /* Set height of the line */
-background-color: #454aa6; /* Set color of the line */
-transition: width 0.3s ease; /* Add transition effect */
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Set position absolute */
+    bottom: -2px; /* Position the line below the navbar item */
+    left: 5%; /* Align the line with the navbar item */
+    width: 0%; /* Set width to auto to match text width */
+    height: 2px; /* Set height of the line */
+    background-color: #454aa6; /* Set color of the line */
+    transition: width 0.3s ease; /* Add transition effect */
 }
 .navbar-item:hover::after {
-width: 90%; /* Expand the width of the line on hover */
+    width: 90%; /* Expand the width of the line on hover */
 }
 .navbar-item:hover {
     background-color: transparent; /* Change background color of navbar items on hover */
@@ -170,9 +172,3 @@ background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF,
 /*
 background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
 */
-
-.f-base {
-    background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
-    position: relative;
-    overflow: hidden;
-}

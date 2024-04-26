@@ -20,6 +20,10 @@ const options = {
       },
     },
   },
+  fullScreen: {
+    enable: false
+  },
+  fpsLimit: 60,
   particles: {
     color: {
       value: "#ffffff",
@@ -54,8 +58,8 @@ const options = {
   },
 };
 
-// Load particles into the particles-container
-tsParticles.load("particles-container", options);
+// Load particles
+tsParticles.load("tsparticles", options);
 
 
 document.addEventListener('DOMContentLoaded', () => {
