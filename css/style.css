@@ -56,28 +56,37 @@ body {
       }
 }
 
+nav,
+.navbar-menu {
+  background-color: transparent !important;
+}
+
 .navbar-item {
     border-radius: .55rem; /* Add border radius to navbar items */
 }
 .navbar-item::after {
     content: ''; /* Add content to the pseudo-element */
     position: absolute; /* Set position absolute */
-    bottom: -2px; /* Position the line below the navbar item */
-    left: 5%; /* Align the line with the navbar item */
-    width: 0%; /* Set width to auto to match text width */
-    height: 2px; /* Set height of the line */
+    bottom: 0;
+    left: 0;
+    width : 100%;
+    height : 2px;
     background-color: #454aa6; /* Set color of the line */
-    transition: width 0.3s ease; /* Add transition effect */
+    transform : scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add transition effect */
 }
 .navbar-item:hover::after {
-    width: 90%; /* Expand the width of the line on hover */
+    transform-origin: bottom left;
+    transform: scaleX(1);
 }
 .navbar-item:hover {
     background-color: transparent; /* Change background color of navbar items on hover */
-    opacity: .5
+    color: white;
 }
 .navbar-burger {
     margin-right: 0.75rem;
+    color: white
 }
 .navbar-item.has-dropdown.is-active .navbar-menu {
     display: block;
@@ -121,33 +130,7 @@ body {
         opacity: 1;
     }
 }
-/*
-.scroll-down i {
-    color: white;
-  }
-.vert-move2 {
-    -webkit-animation: mover 0.5s infinite alternate;
-    animation: mover 0.5s infinite alternate;
-}
-*/
 
-@keyframes mover {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-@-webkit-keyframes mover /* Safari and Chrome */ {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
 
 /*
     https://coolors.co/5865f2-5e68f2-646af2-6f6ef1-8677ef-b388eb-ea80fc
@@ -172,3 +155,37 @@ background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF,
 /*
 background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
 */
+
+::-webkit-scrollbar {
+	width: 5px;
+	color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+	background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #5865F2;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5865F2;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(219, 219, 219);
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgb(219, 219, 219);
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgb(219, 219, 219);
+}
