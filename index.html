@@ -17,35 +17,36 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Hero start-->
-  <section class="hero bg-base is-fullheight">
-    <!-- Navbar start -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <!-- Burger menu -->
-        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+  <!-- Navbar start -->
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <!-- Burger menu -->
+      <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Navbar menu start -->
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/sighfy">
+          <i class="fab fa-github"></i>&nbsp; GitHub
+        </a>
+
+        <a class="navbar-item" href="https://sighfy.dev/dna">
+          <i class="fa-solid fa-dna"></i>&nbsp; DNA
         </a>
       </div>
+      <!-- Navbar menu end -->
+    </div>
+  </nav>
+  <!-- Navbar end -->
 
-      <!-- Navbar menu start -->
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item" href="https://github.com/sighfy">
-            <i class="fab fa-github"></i>&nbsp; GitHub
-          </a>
-
-          <a class="navbar-item" href="https://sighfy.dev/dna">
-            <i class="fa-solid fa-dna"></i>&nbsp; DNA
-          </a>
-        </div>
-        <!-- Navbar menu end -->
-      </div>
-    </nav>
-    <!-- Navbar end -->
+  <!-- Hero start-->
+  <section class="hero bg-base is-fullheight">
 
     <!-- Hero start-->
     <div class="hero-body">
@@ -64,6 +65,7 @@
     </div>
   </section>
   <!-- Hero end-->
+
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
   <script src="js/script.js"></script>
