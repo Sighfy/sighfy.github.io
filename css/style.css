@@ -135,6 +135,34 @@ nav,
     overflow: hidden; /* Hide the overflowing content */
 }
 
+.glass-effect {
+    background-color: transparent;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    transition: transform .5s;
+    overflow: hidden;
+}
+.glass-effect:hover {
+    transform: translateY(-20px);
+}
+.glass-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 1.5s;
+}
+.glass-effect:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
 @keyframes xd {
     from {
         opacity: 0;
