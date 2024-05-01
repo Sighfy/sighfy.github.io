@@ -10,7 +10,8 @@
     --glass-effect-backdrop-filter: blur(2px);
     --navbar-dropdown-bg: rgba(255, 255, 255, 0.1);
     --navbar-dropdown-shadow: rgba(31, 38, 135, 0.37);
-    --scrollbar-color: #ffffff;
+    --scrollbar-color: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
+    --scrollbar-track: #212529;
     --placeholder-color: rgb(219, 219, 219);
 }
 
@@ -230,20 +231,19 @@ nav,
 /* Other scrollbar styles */
 ::-webkit-scrollbar {
     width: 5px;
-    color: var(--scrollbar-color);
 }
 
 ::-webkit-scrollbar-track {
-    background: #212529;
+    background: var(--scrollbar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--bg);
+    background: var(--scrollbar-color);
     border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--bg);
+    background: var(--scrollbar-color);
 }
 
 ::placeholder {
