@@ -44,8 +44,8 @@
 
 .light-theme {
     --bg: linear-gradient(135deg, #B4D7D3, #64B9C4, #1A8D9A, #22647D);
-    --nav-bg: #22647D;
-    --nav-underline: #1A8D9A;
+    --nav-bg: #64B9C4;
+    --nav-underline: #00b9d1;
     --text-color: #000; /* Adjusted text color for better readability */
     --navbar-item-color: black;
     --navbar-item-hover-bg: transparent;
