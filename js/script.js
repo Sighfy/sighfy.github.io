@@ -100,11 +100,15 @@ themeToggle.addEventListener("click", () => {
 function enableDarkMode() {
   document.body.classList.remove("light-theme");
   document.body.classList.add("dark-theme");
+  document.querySelector(".hero h1").classList.remove("has-text-light");
+  document.querySelector(".hero h1").classList.add("has-text-grey-dark");
 }
 
 function enableLightMode() {
   document.body.classList.remove("dark-theme");
   document.body.classList.add("light-theme");
+  document.querySelector(".hero h1").classList.remove("has-text-grey-dark");
+  document.querySelector(".hero h1").classList.add("has-text-light");
 }
 
 function enableDarkText() {

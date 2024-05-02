@@ -3,6 +3,7 @@
     --nav-bg: #454aa6;
     --nav-underline: #454aa6;
     --text-color: #fff;
+    --navbar-item-color: white;
     --navbar-item-hover-bg: transparent;
     --navbar-item-hover-color: white;
     --glass-effect-border-color: rgba(255, 255, 255, 0.18);
@@ -24,6 +25,7 @@
         --nav-bg: #454aa6;
         --nav-underline: #454aa6;
         --text-color: #fff;
+        --navbar-item-color: white;
         --navbar-item-hover-bg: transparent;
         --navbar-item-hover-color: white;
         --glass-effect-border-color: rgba(255, 255, 255, 0.18);
@@ -45,11 +47,12 @@
     --nav-bg: #22647D;
     --nav-underline: #1A8D9A;
     --text-color: #000; /* Adjusted text color for better readability */
+    --navbar-item-color: black;
     --navbar-item-hover-bg: transparent;
     --navbar-item-hover-color: #000; /* Adjusted hover color for better contrast */
     --glass-effect-border-color: rgba(0, 0, 0, 0.18); /* Adjusted glass effect border color */
     --glass-effect-bg: rgba(0, 0, 0, 0.1); /* Adjusted glass effect background color */
-    --glass-effect-shadow: rgba(255, 255, 255, 0.37); /* Adjusted glass effect shadow */
+    --glass-effect-shadow: rgba(0, 0, 0, 0.199); /* Adjusted glass effect shadow */
     --glass-effect-backdrop-filter: blur(2px);
     --glass-effect-shine: rgba(0,0,0,0.5);
     --navbar-dropdown-bg: rgba(255, 255, 255, 0.1);;
@@ -66,6 +69,7 @@
     --nav-bg: #454aa6;
     --nav-underline: #454aa6;
     --text-color: #fff;
+    --navbar-item-color: white;
     --navbar-item-hover-bg: transparent;
     --navbar-item-hover-color: white;
     --glass-effect-border-color: rgba(255, 255, 255, 0.18);
@@ -162,6 +166,7 @@ nav,
 
 .navbar-item {
     border-radius: .55rem; /* Add border radius to navbar items */
+    color: var(--navbar-item-color);
 }
 
 .navbar-item::after {
