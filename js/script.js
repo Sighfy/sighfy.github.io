@@ -87,9 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
 const themeToggle = document.querySelector("#theme-toggle");
 
 themeToggle.addEventListener("click", () => {
-  document.body.classList.contains("light-theme")
-    ? enableDarkMode()
-    : enableLightMode();
+  const isLightTheme = document.body.classList.contains("light-theme");
+  if (isLightTheme) {
+    enableDarkMode();
+    enableDarkText();
+  } else {
+    enableLightMode();
+    enableLightText();
+  }
 });
 
 function enableDarkMode() {
@@ -102,12 +107,30 @@ function enableLightMode() {
   document.body.classList.add("light-theme");
 }
 
+function enableDarkText() {
+  const textElements = document.querySelectorAll(".has-text-grey-dark");
+  textElements.forEach(element => {
+    element.classList.remove("has-text-grey-dark");
+    element.classList.add("has-text-grey-light");
+  });
+}
+
+function enableLightText() {
+  const textElements = document.querySelectorAll(".has-text-grey-light");
+  textElements.forEach(element => {
+    element.classList.remove("has-text-grey-light");
+    element.classList.add("has-text-grey-dark");
+  });
+}
+
 function setThemePreference() {
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     enableDarkMode();
+    enableDarkText();
     return;
   }
   enableLightMode();
+  enableLightText();
 }
 
 document.onload = setThemePreference();
