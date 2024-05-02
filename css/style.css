@@ -1,6 +1,7 @@
 :root {
     --bg: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
     --nav-bg: #454aa6;
+    --nav-underline: #454aa6;
     --text-color: #fff;
     --navbar-item-hover-bg: transparent;
     --navbar-item-hover-color: white;
@@ -14,12 +15,14 @@
     --scrollbar-color: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
     --scrollbar-track: #212529;
     --placeholder-color: rgb(219, 219, 219);
+    --toggle-color: #1A8D9A;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
         --nav-bg: #454aa6;
+        --nav-underline: #454aa6;
         --text-color: #fff;
         --navbar-item-hover-bg: transparent;
         --navbar-item-hover-color: white;
@@ -33,30 +36,35 @@
         --scrollbar-color: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
         --scrollbar-track: #212529;
         --placeholder-color: rgb(219, 219, 219);
+        --toggle-color: #1A8D9A;
     }
 }
 
 .light-theme {
-    --bg: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
-    --nav-bg: #454aa6;
-    --text-color: #fff;
+    --bg: linear-gradient(135deg, #B4D7D3, #64B9C4, #1A8D9A, #22647D);
+    --nav-bg: #22647D;
+    --nav-underline: #1A8D9A;
+    --text-color: #000; /* Adjusted text color for better readability */
     --navbar-item-hover-bg: transparent;
-    --navbar-item-hover-color: white;
-    --glass-effect-border-color: rgba(255, 255, 255, 0.18);
-    --glass-effect-bg: rgba(255, 255, 255, 0.1);
-    --glass-effect-shadow: rgba(31, 38, 135, 0.37);
+    --navbar-item-hover-color: #000; /* Adjusted hover color for better contrast */
+    --glass-effect-border-color: rgba(0, 0, 0, 0.18); /* Adjusted glass effect border color */
+    --glass-effect-bg: rgba(0, 0, 0, 0.1); /* Adjusted glass effect background color */
+    --glass-effect-shadow: rgba(255, 255, 255, 0.37); /* Adjusted glass effect shadow */
     --glass-effect-backdrop-filter: blur(2px);
-    --glass-effect-shine: rgba(255,255,255,0.5);
+    --glass-effect-shine: rgba(0,0,0,0.5);
     --navbar-dropdown-bg: rgba(255, 255, 255, 0.1);;
-    --navbar-dropdown-shadow: rgba(31, 38, 135, 0.37);
+    --navbar-dropdown-shadow: rgba(255, 255, 255, 0.37); /* Adjusted dropdown shadow */
     --scrollbar-color: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
     --scrollbar-track: #212529;
     --placeholder-color: rgb(219, 219, 219);
+    --toggle-color: #0046AC; /* Adjusted toggle color */
 }
 
+
 .dark-theme {
-    --bg: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
+    --bg: linear-gradient(135deg, #00112D, #001945, #00235C, #00317E, #0046AC);
     --nav-bg: #454aa6;
+    --nav-underline: #454aa6;
     --text-color: #fff;
     --navbar-item-hover-bg: transparent;
     --navbar-item-hover-color: white;
@@ -70,6 +78,7 @@
     --scrollbar-color: linear-gradient(135deg, #5865F2, #6F6EF1, #8677EF, #8677EF);
     --scrollbar-track: #212529;
     --placeholder-color: rgb(219, 219, 219);
+    --toggle-color: #1A8D9A;
 }
 
 html {
@@ -124,7 +133,7 @@ body {
         position: absolute;
         right: 2rem;
         top: calc(100% + 0.5rem);
-        z-index: 20;
+        z-index: 1;
         background-color: transparent;
         border: 1px solid var(--glass-effect-border-color);
         border-radius: 1rem;
@@ -162,7 +171,7 @@ nav,
     left: 0;
     width : 100%;
     height : 2px;
-    background-color: var(--nav-bg); /* Set color of the line */
+    background-color: var(--nav-underline); /* Set color of the line */
     transform : scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease; /* Add transition effect */
@@ -326,26 +335,26 @@ nav,
 
 /*
     https://coolors.co/5865f2-5e68f2-646af2-6f6ef1-8677ef-b388eb-ea80fc
-*/
-/* Original Theme */
-/*
+Original Theme
 background: linear-gradient(135deg, #0c007d, #552bb9, #9d55f5);
-*/
-/* Ocean Breeze */
-/*
+Ocean Breeze
 background: linear-gradient(135deg, #82D8D8, #65C8C8, #49B7B7, #2CA5A5, #198E8E, #008080);
-*/
-/* Midnight Blue */
-/*
+Midnight Blue
 background: linear-gradient(135deg, #090E42, #080C3F, #070A3B, #060838, #050635, #040432);
-*/
-/* Light theme */
-/*
+Light theme
 background: linear-gradient(135deg, #5865F2, #5E68F2, #646AF2, #6F6EF1, #8677EF, #8677EF, #EA80FC);
-*/
-/* Dark theme */
-/*
+Dark theme
 background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF, #FF33FF);
+midnight sky:
+linear-gradient(135deg, #0F0F17, #1F2030, #2F3250, #4F5470, #6F7690);
+deep ocean:
+linear-gradient(135deg, #001226, #002444, #003962, #005080, #0071A2);
+electric night:
+linear-gradient(135deg, #00112D, #001945, #00235C, #00317E, #0046AC);
+cloudy day:
+linear-gradient(135deg, #ECE9E6, #B4D7D3, #64B9C4, #1A8D9A, #22647D);
+golden hour:
+linear-gradient(135deg, #F7D49A, #F8A488, #F0746E, #D23B44, #8F0E36);
 */
 
 #theme-toggle {
@@ -359,7 +368,7 @@ background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF,
   }
 
   #theme-toggle svg {
-    fill: black;
+    fill: var(--toggle-color);
     background: transparent !important;
   }
 
@@ -367,7 +376,6 @@ background: linear-gradient(135deg, #000033, #330066, #660099, #9900CC, #CC00FF,
     content: "";
     position: absolute;
     inset: 0;
-    background: hsl(0 0% 50% / 0.2);
     border-radius: inherit;
     transform: scale(0);
     opacity: 0;
